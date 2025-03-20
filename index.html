@@ -3,14 +3,356 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Birthday Playlist</title>
+    <style>
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8edae;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .opening {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff5f5;
+            border-radius: 8px;
+        }
+        
+        h3 {
+            color: #c5811b;
+            border-bottom: 2px solid #e6ad10;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        h4 {
+            color: #5a5a5a;
+        }
+        
+        .song-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #fa8f24;
+        }
+        
+        .lyrics {
+            font-style: italic;
+            color: #6c757d;
+            margin-left: 20px;
+            border-left: 2px solid #dee2e6;
+            padding-left: 15px;
+        }
+        
+        .translation {
+            color: #868e96;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .my-text {
+            background-color: #f0f7ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        iframe {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+            color: #868e96;
+        }
+    </style>
 </head>
 <body>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/AN_R4pR1hck?si=j70Lmzwgq-XEunfK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/bomTQVvfEK4?si=t_YoLXdde1Vwx9iF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/sGBqjwh9_qc?si=xH4fve0M7KiXIcVl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5ZT-z9L_71A?si=jfmTmVud1qpjX9r4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/eNBMILsF0zo?si=RTYVz5rRj337jX_m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/g92T8GwhxUA?si=PUXmCMPb9DZPUAhT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="container">
+        <div class="opening">
+            <h4>早安：）又到了這個時候了！我們阿雅的生日！</h4>
+            <p>今年的禮物可能沒有去年那麼ㄅㄧㄤˋㄅㄧㄤˋＱＱ</p>
+            <img src="static/screenshot001.jpg" alt="screenshot" style="width: 400px; height: auto;">
+            <p>⬆️這個禮物是去年四月的時候想到的，就是在那段時間到今年生日前聽到的歌，有想到你的，把它做成歌單送給你！</p>
+            <p>也不是說整首歌都想到你啦，是有些歌詞覺得蠻符合的！下面我整理了一些部分有符合個歌詞！</p>
+        </div>
+
+        <div class="song-section">
+            <h3>It's The Most Wonderful Time Of The Year</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AN_R4pR1hck?si=j70Lmzwgq-XEunfK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="lyrics">
+                <p>It's the most wonderful time of the year</p>
+            </div>
+            <div class="translation">
+                <p>這是一年中最棒的時光</p>
+            </div>
+            <div class="my-text">
+                <p>第一首就用最簡單的歌來開場吧！</p>
+                <p>雖然是聖誕歌，但是你的生日就如同聖誕一般的氣氛一樣，讓人驚喜又期待！</p>
+            </div>
+        </div>
+
+        <div class="song-section">
+            <h3>Here's A Candle (For Your Birthday Cake)</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bomTQVvfEK4?si=t_YoLXdde1Vwx9iF" title="heres a candle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="lyrics">
+                <p>Here's a candle for your birthday cake</p>
+                <p>There's a wind for the wish you make</p>
+                <p>Here's a map for the road you're on</p>
+                <p>You need a map cos' the road is long</p>
+            </div>
+            <div class="translation">
+                <p>這裡是給你生日蛋糕用的蠟燭</p>
+                <p>將會有風來迎接你許下的願望</p>
+                <p>這裡是你所在路途上的地圖</p>
+                <p>你需要它是因為路還很長</p>
+            </div>
+            <div class="my-text">
+                <p>第二首是個生日歌，Noel Gallagher的寫生日歌！<a href="https://www.instagram.com/p/DCJg8llPh78/?img_index=3" target="_blank">（對不起了今年沒有鄭容和你老公🙏）</a></p>
+                <p>還有，是的！接下來的路還很長，如果不知道怎麼走的話，我來當你的地圖吧！我會盡全力指引你的！</p>
+                <p>如果我無法勝任當地圖的話，我來當你的手電筒吧！</p>
+                <p>如果手電筒也不行的話，就讓我默默陪著你吧！！有需要時我隨時都在哦！</p>
+            </div>
+        </div>
+
+        <div class="song-section">
+            <h3>Why Does It Always Rain On Me?</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sGBqjwh9_qc?si=xH4fve0M7KiXIcVl" title="why rain on me" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="lyrics">
+                <p>I can't sleep tonight</p>
+                <p>Everybody saying everything's alright</p>
+                <p>Still I can't close my eyes</p>
+                <p>I'm seeing a tunnel at the end of all these lights</p>
+                <p>Sunny days</p>
+                <p>Where have you gone?</p>
+            </div>
+            <div class="translation">
+                <p>我今天晚上睡不著</p>
+                <p>大家都說一切都會沒事的</p>
+                <p>但我還是無法閉上我的雙眼</p>
+                <p>我看見這些燈光盡頭有一條隧道</p>
+                <p>美好的天氣啊</p>
+                <p>你都去哪了？</p>
+            </div>
+            <div class="my-text">
+                <p>這首歌有那麼一點點的悲傷感，歌詞裡的睡不著實在是太符合你了！</p>
+                <p>最近比較少跟你聊天，所以也不知道你失眠的狀況有沒有改善，如果有改善的話，太好了！不要天天夢到我哦😏</p>
+                <p>如果沒有的話，我來唱安眠曲給你聽！太難聽的話我來唸故事給你聽！一定要讓你睡著，睡香香！睡得比全世界都香！</p>
+                <p>還有這歌的淡淡悲傷感也讓我覺得很符合你，有種悲傷小少女的感覺（？）</p>
+            </div>
+        </div>
+
+        <div class="song-section">
+            <h3>Flowers In The Window</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5ZT-z9L_71A?si=jfmTmVud1qpjX9r4" title="flowers window" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="lyrics">
+                <p>There is no reason to feel bad</p>
+                <p>But there are many seasons to feel bad, sad, mad</p>
+                <p>It's just a bunch of feelings that we have to hold</p>
+                <p>But I am here to help you with the load</p>
+                <p>-</p>
+                <p>So now we're here and now is fine</p>
+                <p>So far away from there and there is time, time, time</p>
+                <p>To plant new seeds and watch them grow</p>
+                <p>So there'll be flowers in the window when we go</p>
+            </div>
+            <div class="translation">
+                <p>心情不好不需要什麼原因的</p>
+                <p>但是還是有很多時候會感到很糟糕、難過、生氣</p>
+                <p>這些都是我們必須承受的一些情緒</p>
+                <p>但我是來這裡幫你一起承擔的</p>
+                <p>-</p>
+                <p>現在我們在這裡，所有事都安然無恙</p>
+                <p>到達終點還有段距離，不過我們還有時間</p>
+                <p>來種下新的種子，看著他們成長</p>
+                <p>所以當我們啟程時，就會看到窗外的花朵</p>
+            </div>
+            <div class="my-text">
+                <p>這首歌，跟上一首一樣，不過這次帶更多一點希望感</p>
+                <p>我沒記錯的話，寫這首歌的人，也就是主唱，說這是一首關於一段關係成長的歌，不管是友情愛情還是親情</p>
+                <p>而窗外那朵花，正是那段關係的樣子</p>
+                <p>我想我們應該已經種下那些種子了吧！現在的我們感覺應該是等著他開花？還是已經開了呢🤔</p>
+            </div>
+        </div>
+
+        <div class="song-section">
+            <h3>Absolutely (Story of a Girl)</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eNBMILsF0zo?si=RTYVz5rRj337jX_m" title="story of a girl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="lyrics">
+                <p>This is the story of a girl</p>
+                <p>Who cried a river and drowned the whole world</p>
+                <p>And while she looks so sad in photographs</p>
+                <p>I absolutely love her</p>
+                <p>When she smiles</p>
+            </div>
+            <div class="translation">
+                <p>這是個關於一個女孩的故事</p>
+                <p>一個哭出了一條河，把整個世界都淹了的那個女孩</p>
+                <p>雖然她在照片裡看起來很難過</p>
+                <p>但我還是很愛他</p>
+                <p>尤其是他笑的時候</p>
+            </div>
+            <div class="my-text">
+                <p>真的很糟糕，感覺在我的淺意識裡，你就是個很難過很難過很無助很需要陪伴的人！</p>
+                <p>但是這段歌詞我是真的覺得蠻符合你的哈哈ㄚ。照片裡看起來很難過，應該是沒有啦，應該是比較兇？</p>
+                <p>兇兇本人⬇️（但他其實人很好，有顆愛動物的心❤️）</p>
+                <img src="static/730FEB9D-BA15-41E9-9A0F-156050C7973D.jpg" alt="photo" style="width:400px; height: auto;">
+                <p>不過沒關係！不管是兇的還是笑的還是難過的還是醜的我都會愛你的！</p>
+            </div>
+        </div>
+
+        <div class="song-section">
+            <h3>Birthday Baby (The Girl With No Smile)</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g92T8GwhxUA?si=PUXmCMPb9DZPUAhT" title="birthday baby" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="lyrics">
+                <p>Well, happy birthday, baby</p>
+                <p>Everybody's here for you</p>
+                <p>Happy birthday, baby</p>
+                <p>Six candles lighting up the whole room</p>
+                <p>Outdated kitchen full of smiles</p>
+                <p>Everyone's standing 'round</p>
+                <p>We take pictures so we remember who we are</p>
+                <p>Twenty-five years from now</p>
+                <p>-</p>
+                <p>You hide your heartbeat in a box under the bed</p>
+                <p>But it makes too much noise down there</p>
+                <p>So you swallow it up instead</p>
+                <p>And now a pounding headache keeps you awake</p>
+                <p>As you daydream through the night</p>
+                <p>We take pictures so we remember who we are</p>
+            </div>
+            <div class="translation">
+                <p>生日快樂（寶貝太噁心了我不行）</p>
+                <p>大家都在這裡給你慶生</p>
+                <p>（不要再寶貝了😭）</p>
+                <p>六根蠟燭點亮了整個房間</p>
+                <p>老舊的廚房裡充滿著微笑</p>
+                <p>每個人都在那裡</p>
+                <p>我們拍照是為了記住25年後的我們是誰</p>
+                <p>-</p>
+                <p>你把你的心跳藏在你床下的盒子裡</p>
+                <p>但它又卻如此吵雜</p>
+                <p>所以你決定把它吞進去</p>
+                <p>然而現在你又因為頭痛欲裂，無法入眠</p>
+                <p>整夜做著白日夢</p>
+                <p>我們拍照是為了記住我們是誰</p>
+            </div>
+            <div class="my-text">
+                <p>最後一首！我覺得它還蠻適合當close song的！</p>
+                <p>這首我覺得很酷，因為裡面有提到'25 years from now'...也剛好是你的25歲生日！！</p>
+                <p>再來就是這首歌的標題又是"The girl with no smile"對應到了上一首歌，再一次對不起了ＱＱ</p>
+                <p>我的淺意識真的覺得你太悲傷了，你到底是不是有smile的girl呢？</p>
+                <p>不過也像"Flowers In The Window"那首歌提到的，你願意的話，我會跟你一起承擔的！</p>
+            </div>
+        </div>
+
+        <div class="note">
+            <p>現在我回頭看看這些歌，沒有當初我想設計的那樣，反而是有一半都是生日歌😭 但是唱愛情的歌真的太多了！友情的歌真的不容易！</p>
+            <p>好了，這就是我今天送給你的生日禮物，我已經沒招了，明年也沒有歌單了...👀</p>
+            <p>最後來些生日祝福吧：</p>
+            <div class="statement">
+                <p>
+                    生日快樂！金晶的媽咪（還有阿布、還有你手機封面那隻小女森我忘記名字了ＱＱ有個天字嗎？天天？）！
+                    25了已經是阿姨了，少女阿姨，對待事情已經不能再跟以前一樣無憂無慮了嗚嗚，但是！路還很長！不能跟以前一樣那又怎樣！
+                    未來的你才是你該專注的！現在你可能覺得自己很廢，才怪！你才不廢！在我眼裡，你可是堅強（又善良）的女人！
+                    你一個人帶著鳥鳥離開家鄉呢！這很像什麼，電影裡面追尋夢想的女主角，你已經跨出你的第一步了！這是一個勇敢的舉動，也是我很敬佩的！
+                    所以千萬不要覺得自己一事無成，你已經有了一個很棒的開始，雖然接下來要走的路還很長，途中可能也會有各種障礙，但你可是堅強了人呀！別小看自己了！
+                    能征服恐怖鳥鳥的人，還能怕些什麼呢！
+
+                    好啦！剩下的話留給明年說了，生日快樂，希望你的25歲可以是充滿有意義的一年<a href="https://www.instagram.com/p/BY2-UVWg0Tm/" target="_blank">記得許願<3 </a>
+                </p>
+            </div>
+        </div>
+        <style>
+            .note {
+                background-color: #fff8e1;
+                padding: 25px;
+                border-radius: 10px;
+                margin: 40px 0;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+                border-left: 5px solid #ffcc80;
+            }
+            
+            .note p {
+                font-size: 16px;
+                line-height: 1.7;
+                margin-bottom: 15px;
+            }
+            
+            .statement {
+                background-color: #e8f5e9;
+                padding: 20px;
+                border-radius: 8px;
+                margin-top: 20px;
+                border-left: 4px solid #81c784;
+            }
+            
+            .statement p {
+                font-size: 15px;
+                line-height: 1.8;
+                text-align: justify;
+                color: #2e7d32;
+            }
+            
+            .note a {
+                color: #ff7043;
+                font-weight: bold;
+                transition: all 0.3s ease;
+            }
+            
+            .note a:hover {
+                color: #e64a19;
+                text-decoration: underline;
+            }
+        </style>
+
+        <div class="footer">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4eFym8ueYzpxAABzRNAysN?utm_source=generator" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p><a href="https://open.spotify.com/playlist/4eFym8ueYzpxAABzRNAysN?si=ef0518947ca04f1f" target="_blank">歌單本人（Spotify連結，我知道你沒用Spotify，不過我還是附上了！）</a></p>
+
+            <h3>最後附上一張：恐怖鳥鳥跟受驚嚇的瀚云🥰 （還有恐怖鳥鳥的可愛主人）</h3>
+            <img src="static/the_horror_bird.jpg" alt="an evil monster and cutie the me" style="width: 400px;">
+        </div>
+    </div>
 </body>
 </html>
